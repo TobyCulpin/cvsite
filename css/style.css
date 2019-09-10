@@ -25,6 +25,8 @@
     padding: 0px;
     overflow: hidden;
     background: linear-gradient(to right, #222222 70%, #000000 85%);
+
+    z-index: 9999;
 }
 
 .navBar ul li
@@ -83,7 +85,7 @@
     font-family: var(--default-font);
 }
 
-/* Education page */
+/* page */
 
 .page
 {
@@ -120,4 +122,35 @@
     background-repeat: repeat-y;
     background-size: cover;
     
+}
+
+/* Grades */
+
+.page .grades
+{
+
+}
+
+.page .grades .title
+{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+
+    white-space: nowrap;
+}
+
+.page .grade .headings
+{
+
+}
+
+.page .grade .headings ul
+{
+
+}
+
+.page .grade .headings ul li
+{
+
 }
