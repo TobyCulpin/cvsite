@@ -128,29 +128,79 @@
 
 .page .grades
 {
-
+	position: absolute;
+	
+	top: 200px;
+	left: 100px;
+    font-size: 24px;
 }
 
 .page .grades .title
 {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-
-    white-space: nowrap;
+    position: relative;
 }
 
-.page .grade .headings
+.page .grades .headings
 {
-
+	position: relative;
 }
 
-.page .grade .headings ul
-{
 
+.page .grades .headings ul
+{
+    width: auto;
+    list-style-type: none;
+    overflow: hidden;
+	margin: 0px 0px 0px 0px;
 }
 
-.page .grade .headings ul li
+.page .grades .headings ul li
 {
+    float: left;
+	
+	display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--default-font);
+	font-style: italic;
+	
+	
+	padding: 10px 10px;
+}
 
+.page .grades .row
+{
+	position: relative;
+}
+
+.page .grades .row ul
+{
+    width: auto;
+    list-style-type: none;
+    overflow: hidden;
+	margin: 0px 0px 0px 0px;
+}
+
+.page .grades .row ul li
+{
+    float: left;
+	
+	display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--default-font);
+	
+	padding: 10px 10px;
+}
+
+.page .grades .wrapper
+{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
