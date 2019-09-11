@@ -85,6 +85,14 @@
     font-family: var(--default-font);
 }
 
+/* pade ids */
+
+#educationPage
+{
+    --page-height: 1750px;    
+}
+
+
 /* page */
 
 .page
@@ -115,92 +123,207 @@
 .bgImage
 {
     margin: 64px 0px 0px 0px;
-    background-image: url("../images/blackBackground4.jpg");
+    background-image: url("../images/blackBackground1.jpg");
     height: var(--page-height);
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
     
+    z-index: 100;
 }
+
+/* Education ids */
+
+    /* A level ids */
+
+    #aLevelGrades
+    {
+        top: 300px;
+        left: 5%;
+    }
+
+    #aLevelText
+    {
+        top: 300px;
+        left: 45%;
+        width: 45%;
+    }
+
+    #aLevelImg
+    {
+        left: 0%;
+        top: 64px;
+
+        width: 100%;
+        height: 200px;
+    }
+
+    /* GCSE ids */
+
+    #gcseGrades
+    {
+        top: 600px;
+        left: 50%;
+    }
+
+    #gcseText
+    {
+        top: 840px;
+        left: 5%;
+        width: 40%;
+    }
+
+    #gcseImg
+    {
+        left: 5%;
+        top: 620px;
+
+        width: 40%;
+        height: 200px;
+    }
+
+    /* Warwick ids */
+
+    #warwickText
+    {
+        top: 1100px;
+        left: 52.5%;
+        width: 42.5%;
+    }
+
+    #warwickImg
+    {
+        left: 52.5%;
+        top: 1500px;
+
+        width: 42.5%;
+        height: 200px;
+    }
+
+    /* myEducation ids */
+
+    #myEducationText
+    {
+        top: 1100px;
+        left: 5%;
+        width: 42.5%;
+    }
+
+    #myEducationImg
+    {
+        left: 5%;
+        top: 1500px;
+
+        width: 42.5%;
+        height: 200px;
+    }
 
 /* Grades */
 
 .page .grades
 {
 	position: absolute;
-	
-	top: 200px;
+    
+    top: 100px;
 	left: 100px;
+	
     font-size: 24px;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .page .grades .title
 {
     position: relative;
+    margin: inherit;
+    padding: inherit;
+
+    font-style: normal;
+    font-size: 20pt;
+    font-family: var(--default-font);
 }
 
-.page .grades .headings
+.page .grades .heading
 {
 	position: relative;
-}
+    margin: inherit;
+    padding: inherit;
 
-
-.page .grades .headings ul
-{
-    width: auto;
-    list-style-type: none;
-    overflow: hidden;
-	margin: 0px 0px 0px 0px;
-}
-
-.page .grades .headings ul li
-{
-    float: left;
-	
-	display: inline-block;
-    text-align: left;
-    text-decoration: none;
-    font-size: 16px;
+    font-style: italic;
+    font-size: 14pt;
     font-family: var(--default-font);
-	font-style: italic;
-	
-	
-	padding: 10px 10px;
 }
 
 .page .grades .row
 {
-	position: relative;
-}
+    position: relative;
+    margin: inherit;
+    padding: inherit;
+    width: 300%;
 
-.page .grades .row ul
-{
-    width: auto;
-    list-style-type: none;
-    overflow: hidden;
-	margin: 0px 0px 0px 0px;
-}
-
-.page .grades .row ul li
-{
-    float: left;
-	
-	display: inline-block;
-    text-align: left;
-    text-decoration: none;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 16pt;
     font-family: var(--default-font);
-	
-	padding: 10px 10px;
 }
 
 .page .grades .wrapper
 {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 50px);
-  grid-gap: 0px;
+  grid-template-rows: repeat(0, 50px);
+  grid-row-gap: 0px;
+  grid-column-gap: 110px;
   margin-left: 0px;
-  padding-left: 0px;
+  padding: 0px 0px 0px 0px;
+
+}
+
+/* Text Boxes */
+
+.page .textBox
+{
+    position: absolute;
+
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    font-style: normal;
+    font-size: 14pt;
+    font-family: var(--default-font);
+}
+
+.page .textBox p
+{
+    font-size: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+.page .textBox h1
+{
+    font-size: 20pt;
+    margin: inherit;
+    padding: inherit;
+}
+
+.page .textBox a
+{
+    font-size: inherit;
+    margin: inherit;
+    padding: inherit;
+
+    color: #e69100;
+}
+
+/* Image Boxes */
+
+.page .imgBox
+{
+    position: absolute;
+
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
