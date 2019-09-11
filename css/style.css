@@ -11,6 +11,8 @@
     --logo-text-top-offset: calc((60px - var(--logo-text-size)) / 2);
 
     --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --vol-and-sco-no-of-photos-in-slide: 3;
 }
 
 
@@ -47,13 +49,7 @@
 
 .navBar ul li a:hover
 {
-    background: radial-gradient(circle at center, #e69100, #222222 50%);
-    color: #ffffff;
-}
-
-#navBarCurrent:hover
-{
-    color: #ffffff;
+    color: #e69100;
 }
 
 #navBarCurrent
@@ -132,6 +128,26 @@
     
     z-index: 100;
 }
+
+/* Volunteering and Scouting ids */
+
+    /* DSP ids */
+
+    #dspText1
+    {
+        top: 100px;
+        left: 40%;
+        width: 40%;
+    }
+
+    #dspImg1
+    {
+        left: 10%;
+        top: 100px;
+
+        width: 20%;
+        height: auto;
+    }
 
 /* Education ids */
 
@@ -326,4 +342,55 @@
 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+}
+
+/* Image scroller */
+
+#showContainer
+{
+    /* Main wrapper for all images */
+    width: 800px;
+    height: 600px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+
+    top: 500px;
+    left: 10%;
+}
+
+#showContainer .imgContainer
+{
+    position: absolute;
+
+    top: 500px;
+    left: inherit;
+}
+
+.navButton
+{
+    /* Make buttons look nice */ 
+    cursor: pointer;
+    float: left;
+    width: 25px;
+    height: 22px;
+    padding: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: #000000;
+    opacity: 0.65;
+    user-select: none;
+
+    position: relative;
+    top: -600px;
+}
+
+.navButton:hover
+{
+    opacity: 1;
 }
