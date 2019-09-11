@@ -351,8 +351,8 @@
     /* Main wrapper for all images */
     width: 800px;
     height: 600px;
-    padding: 0;
-    margin: 0 auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     overflow: hidden;
     position: absolute;
 
@@ -362,11 +362,27 @@
 
 #showContainer .imgContainer
 {
-    position: absolute;
 
-    top: 500px;
-    left: inherit;
+    position: relative;
+
+    transition: 1s;
+
+    width: 2400px;
+    height: 600px;
+
+    
+    clear: both;
 }
+
+#showContainer .imgContainer img
+{
+    float: left;
+
+    position: relative;
+    left: -800px;
+
+}
+
 
 .navButton
 {
@@ -376,12 +392,12 @@
     width: 25px;
     height: 22px;
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     overflow: hidden;
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 10px;
     background: #000000;
     opacity: 0.65;
     user-select: none;
@@ -393,4 +409,22 @@
 .navButton:hover
 {
     opacity: 1;
+}
+
+.imgSlide1
+{
+    left: 0px;
+    transition: 1s;
+}
+
+.imgSlide1
+{
+    left: -800px;
+    transition: 1s;
+}
+
+.imgSlide1
+{
+    left: -1600px;
+    transition: 1s;
 }

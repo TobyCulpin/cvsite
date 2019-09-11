@@ -1,15 +1,20 @@
-$(document).ready(function() {
-    $('#previous').on('click', function(){
-      // Change to the previous image
-      $('#img_' + currentImage).stop().fadeOut(0);
-      decreaseImage();
-      $('#img_' + currentImage).stop().fadeIn(1000);
+
+$(document).ready(function () {
+    $('#previous').on('click', function () {
+        document.alert("memes");
+
+        // Change to the previous image
+        let slider = document.getElementsByClassName("imgContainer");
+        slider.classList.remove(("imgSlide" + currentImage));
+        decreaseImage();
+        slider.classList.add(("imgSlide" + currentImage));
     }); 
     $('#next').on('click', function(){
-      // Change to the next image
-      $('#img_' + currentImage).stop().fadeOut(0);
-      increaseImage();
-      $('#img_' + currentImage).stop().fadeIn(1000);
+        // Change to the next image
+        let slider = document.getElementsByClassName("imgContainer");
+        slider.classList.remove(("imgSlide" + currentImage));
+        increaseImage();
+        slider.classList.add(("imgSlide" + currentImage));
     }); 
   
     var currentImage = 1;
