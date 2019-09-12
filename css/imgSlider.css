@@ -1,0 +1,114 @@
+.sliderContainer
+{
+    /* Main wrapper for all images */
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    position: absolute;
+
+    width: var(--slider-width);
+    height: var(--slider-height);
+
+    top: 500px;
+    left: 10%;
+}
+
+.sliderContainer .imgContainer
+{
+
+    display: inline-block;
+    position: relative;
+
+    transition: 1s;
+
+
+    width: calc(10 * var(--slider-width));
+    height: var(--slider-height);
+
+    
+    clear: both;
+}
+
+.sliderContainer .imgContainer img
+{
+
+    float: left;
+
+    position: relative;
+    opacity: 0.5;
+
+    transition: 1s;
+
+}
+
+.imgSlide1
+{
+    float: left;
+    position: relative;
+    left: calc(0 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide2
+{
+    float: left;
+    position: relative;
+    left: calc(-1 * var(--slider-width));
+    transition: 1s;
+    
+}
+.imgSlide3
+{
+    float: left;
+    position: relative;
+    left: calc(-2 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide4
+{
+    float: left;
+    position: relative;
+    left: calc(-3 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide5
+{
+    float: left;
+    position: relative;
+    left: calc(-4 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide6
+{
+    float: left;
+    position: relative;
+    left: calc(-5 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide7
+{
+    float: left;
+    position: relative;
+    left: calc(-6 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide8
+{
+    float: left;
+    position: relative;
+    left: calc(-7 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide9
+{
+    float: left;
+    position: relative;
+    left: calc(-8 * var(--slider-width));
+    transition: 1s;
+}
+.imgSlide10
+{
+    float: left;
+    position: relative;
+    left: calc(-9 * var(--slider-width));
+    transition: 1s;
+}

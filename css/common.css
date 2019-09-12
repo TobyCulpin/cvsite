@@ -1,0 +1,109 @@
+:root
+{
+    --logo-indent: 20px;
+    --logo-size: 30px;
+    --logo-top-offset: calc((64px - var(--logo-size)) / 2);
+
+    --logo-text-indent: calc(var(--logo-size) + var(--logo-indent) + 0px);
+    --logo-text-size: 32px;
+    --logo-text-top-offset: -10px;
+
+    --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Navagation bar */
+.navBar ul
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: linear-gradient(to right, #222222 70%, #000000 85%);
+
+    z-index: 9999;
+}
+
+body
+{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.navBar ul li
+{
+    float: left;
+}
+
+.navBar ul li a
+{
+    display: block;
+    color: #d0d0d0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--default-font);
+}
+
+.navBar ul li a:hover
+{
+    color: #e69100;
+}
+
+#navBarCurrent
+{
+    background-color: #000000;
+    color: #e69100;
+}
+
+#navLogoImage
+{
+    position: absolute;
+    right: 10px;
+    top: var(--logo-top-offset);
+
+    max-height: var(--logo-size);
+    width: auto;
+    height: auto;
+}
+
+#navLogoText
+{
+    position: absolute;
+
+    right: var(--logo-text-indent);
+    top: var(--logo-text-top-offset);
+    text-align: right;
+    font-size: var(--logo-text-size);
+    color: #e69100;
+    font-family: var(--default-font);
+}
+
+/* page */
+
+.page
+{
+    text-align: center;
+    color: white;
+    height: var(--page-height);
+}
+
+/* Backgrounds */
+
+.page .bgImage
+{
+    margin: 64px 0px 0px 0px;
+    background-image: url("../images/blackBackground1.jpg");
+    height: var(--page-height);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    
+    z-index: 100;
+    margin: 0px;
+}

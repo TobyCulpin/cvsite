@@ -1,0 +1,31 @@
+:root
+{
+    --page-height: 4000px;
+
+    --slider-width: 800px;
+    --slider-height: 600px;
+}
+
+/* DSP ids */
+
+#dspText
+{
+    top: 100px;
+    left: 40%;
+    width: 40%;
+}
+
+#dspImg
+{
+    left: 10%;
+    top: 100px;
+
+    width: 20%;
+    height: auto;
+}
+
+#dspImgSlider
+{
+    left: 10%;
+    top: 500px;
+}

@@ -9,7 +9,7 @@ function prevFun()
 
     className = "imgSlide" + String(currentImage);
     addClass(slider, className);
-    }
+}
 
 function nextFun()
 {
@@ -69,6 +69,7 @@ function decreaseImage()
 window.setInterval(function()
 {
     nextFun();
+    
 }, 5000);
 
 

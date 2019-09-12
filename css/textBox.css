@@ -1,0 +1,35 @@
+.page .textBox
+{
+    position: absolute;
+
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    font-style: normal;
+    font-size: 14pt;
+    font-family: var(--default-font);
+}
+
+.page .textBox p
+{
+    font-size: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+.page .textBox h1
+{
+    font-size: 20pt;
+    margin: inherit;
+    padding: inherit;
+}
+
+.page .textBox a
+{
+    font-size: inherit;
+    margin: inherit;
+    padding: inherit;
+
+    color: #e69100;
+}
