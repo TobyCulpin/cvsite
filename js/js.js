@@ -1,44 +1,74 @@
+function prevFun()
+{
+    let slider = document.getElementsByClassName("imgContainer");
 
-$(document).ready(function () {
-    $('#previous').on('click', function () {
-        document.alert("memes");
+    let className = "imgSlide" + String(currentImage);
+    removeClass(slider, className);
 
-        // Change to the previous image
-        let slider = document.getElementsByClassName("imgContainer");
-        slider.classList.remove(("imgSlide" + currentImage));
-        decreaseImage();
-        slider.classList.add(("imgSlide" + currentImage));
-    }); 
-    $('#next').on('click', function(){
-        // Change to the next image
-        let slider = document.getElementsByClassName("imgContainer");
-        slider.classList.remove(("imgSlide" + currentImage));
-        increaseImage();
-        slider.classList.add(("imgSlide" + currentImage));
-    }); 
+    decreaseImage();
+
+    className = "imgSlide" + String(currentImage);
+    addClass(slider, className);
+    }
+
+function nextFun()
+{
+    let slider = document.getElementsByClassName("sliderImg");
+
+    let className = "imgSlide" + String(currentImage);
+    removeClass(slider, className);
+
+    increaseImage();
+
+    className = "imgSlide" + String(currentImage);
+    addClass(slider, className);
+}
+
+function addClass(slider, className)
+{
+    for (let c1 = 0; c1 < slider.length; ++c1)
+    {
+        slider[c1].classList.add(className);
+    }
+}
+
+function removeClass(slider, className)
+{
+    for (let c1 = 0; c1 < slider.length; ++c1)
+    {
+        slider[c1].classList.remove(className);
+    }
+}
   
-    var currentImage = 1;
-    var totalImages = 3;
-  
-    function increaseImage() {
-      /* Increase currentImage by 1.
-      * Resets to 1 if larger than totalImages
-      */
-      ++currentImage;
-      if(currentImage > totalImages) {
+var currentImage = 1;
+var totalImages = document.getElementsByClassName("sliderImg").length;
+
+addClass(document.getElementsByClassName("sliderImg"), "imgSlide1");
+
+
+
+function increaseImage()
+{
+    ++currentImage;
+    if (currentImage > totalImages)
+    {
         currentImage = 1;
-      }
     }
-    function decreaseImage() {
-      /* Decrease currentImage by 1.
-      * Resets to totalImages if smaller than 1
-      */
-      --currentImage;
-      if(currentImage < 1) {
+}
+
+function decreaseImage()
+{
+    --currentImage;
+    if (currentImage < 1)
+    {
         currentImage = totalImages;
-      }
     }
-    window.setInterval(function() {
-        $('#next').click();
-      }, 5000);//auto scrolls every 5 seconds
-  });
+}
+
+//auto scrolls every 5 seconds
+window.setInterval(function()
+{
+    nextFun();
+}, 5000);
+
+

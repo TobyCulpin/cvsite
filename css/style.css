@@ -12,7 +12,8 @@
 
     --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --vol-and-sco-no-of-photos-in-slide: 3;
+    --vol-and-sco-slider-width: 800px;
+    --vol-and-sco-slider-height: 600px;
 }
 
 
@@ -346,11 +347,11 @@
 
 /* Image scroller */
 
-#showContainer
+#sliderContainer
 {
     /* Main wrapper for all images */
-    width: 800px;
-    height: 600px;
+    width: var(--vol-and-sco-slider-width);
+    height: var(--vol-and-sco-slider-height);
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     overflow: hidden;
@@ -360,71 +361,99 @@
     left: 10%;
 }
 
-#showContainer .imgContainer
+#sliderContainer .imgContainer
 {
 
+    display: inline-block;
     position: relative;
 
     transition: 1s;
 
-    width: 2400px;
-    height: 600px;
+    width: calc(10 * var(--vol-and-sco-slider-width));
+    height: var(--vol-and-sco-slider-height);
 
     
     clear: both;
 }
 
-#showContainer .imgContainer img
+#sliderContainer .imgContainer img
 {
+
     float: left;
 
     position: relative;
-    left: -800px;
+
+    transition: 1s;
 
 }
 
-
-.navButton
+.imgSlide1
 {
-    /* Make buttons look nice */ 
-    cursor: pointer;
     float: left;
-    width: 25px;
-    height: 22px;
-    padding: 10px;
-    margin-right: 10px;
-    overflow: hidden;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-    background: #000000;
-    opacity: 0.65;
-    user-select: none;
-
     position: relative;
-    top: -600px;
-}
-
-.navButton:hover
-{
-    opacity: 1;
-}
-
-.imgSlide1
-{
-    left: 0px;
+    left: calc(0 * var(--vol-and-sco-slider-width));
     transition: 1s;
 }
-
-.imgSlide1
+.imgSlide2
 {
-    left: -800px;
+    float: left;
+    position: relative;
+    left: calc(-1 * var(--vol-and-sco-slider-width));
     transition: 1s;
 }
-
-.imgSlide1
+.imgSlide3
 {
-    left: -1600px;
+    float: left;
+    position: relative;
+    left: calc(-2 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide4
+{
+    float: left;
+    position: relative;
+    left: calc(-3 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide5
+{
+    float: left;
+    position: relative;
+    left: calc(-4 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide6
+{
+    float: left;
+    position: relative;
+    left: calc(-5 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide7
+{
+    float: left;
+    position: relative;
+    left: calc(-6 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide8
+{
+    float: left;
+    position: relative;
+    left: calc(-7 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide9
+{
+    float: left;
+    position: relative;
+    left: calc(-8 * var(--vol-and-sco-slider-width));
+    transition: 1s;
+}
+.imgSlide10
+{
+    float: left;
+    position: relative;
+    left: calc(-9 * var(--vol-and-sco-slider-width));
     transition: 1s;
 }
