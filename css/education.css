@@ -1,6 +1,9 @@
 :root
 {
     --page-height: 1750px;
+    
+    --grid-column-gap: 110px;
+    --grid-row-gap: 5px;
 }
 
 /* A level ids */

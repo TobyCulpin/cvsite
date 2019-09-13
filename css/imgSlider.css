@@ -6,11 +6,7 @@
     overflow: hidden;
     position: absolute;
 
-    width: var(--slider-width);
-    height: var(--slider-height);
-
-    top: 500px;
-    left: 10%;
+    /* width, height and position are defined in the id in the page css file */
 }
 
 .sliderContainer .imgContainer
@@ -35,7 +31,6 @@
     float: left;
 
     position: relative;
-    opacity: 0.5;
 
     transition: 1s;
 

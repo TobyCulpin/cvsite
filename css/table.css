@@ -50,8 +50,8 @@
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(0, 50px);
-  grid-row-gap: 0px;
-  grid-column-gap: 110px;
+  grid-row-gap: var(--grid-row-gap);
+  grid-column-gap: var(--grid-column-gap);
   margin-left: 0px;
   padding: 0px 0px 0px 0px;
 }
