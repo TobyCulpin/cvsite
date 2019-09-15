@@ -52,7 +52,7 @@
     top: 1000px;
 
     /* width and height of the slider container, img size may be different */
-    width: calc(min(var(--slider-width), 55%));
+    width: 800px/*calc(min(var(--slider-width), 55%))*/;
     height: var(--slider-height);
 }
 
