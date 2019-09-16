@@ -1,0 +1,9 @@
+.externLink
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+
+    color: #e69100;
+}

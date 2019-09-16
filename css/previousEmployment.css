@@ -1,4 +1,123 @@
 :root
 {
-    --page-height: 2000px;
+    --page-height: 4000px;
+
+    --dsp-height: 200px;
+    --wolseley-height: 900px;
+    --swan-height: 1600px;
+    --priory-height: 2300px;
+}
+
+
+/* Other ids */
+
+#peJump
+{
+    top: 100px;
+    text-align: center;
+}
+
+
+/* DSP ids */
+
+#dspBlock
+{
+    top: var(--dsp-height);
+    left: 15%;
+    width: 70%;
+}
+
+#dspBlock .title
+{
+    font-size: 80px;
+}
+
+#dspImage1
+{
+    top: var(--dsp-height);
+    left: 5%;
+    width: 15%;
+}
+
+#dspImage2
+{
+    top: var(--dsp-height);
+    right: 5%;
+    width: 15%;
+}
+
+
+/* Wolseley ids */
+
+#wolseleyBlock
+{
+    top: var(--wolseley-height);
+    left: 15%;
+    width: 70%;
+}
+
+#wolseleyImage1
+{
+    top: var(--wolseley-height);
+    left: 5%;
+    width: 15%;
+}
+
+#wolseleyImage2
+{
+    top: var(--wolseley-height);
+    right: 5%;
+    width: 15%;
+}
+
+
+/* Swan ids */
+
+#swanBlock
+{
+    top: var(--swan-height);
+    left: 15%;
+    width: 70%;
+}
+
+#swanBlock .title
+{
+    font-size: 80pt;
+}
+
+#swanImage1
+{
+    top: var(--swan-height);
+    left: 5%;
+    width: 15%;
+}
+
+#swanImage2
+{
+    top: var(--swan-height);
+    right: 5%;
+    width: 15%;
+}
+
+/* Priory ids */
+
+#prioryBlock
+{
+    top: var(--priory-height);
+    left: 15%;
+    width: 70%;
+}
+
+#prioryImage1
+{
+    top: var(--priory-height);
+    left: 5%;
+    width: 15%;
+}
+
+#prioryImage2
+{
+    top: var(--priory-height);
+    right: 5%;
+    width: 15%;
 }

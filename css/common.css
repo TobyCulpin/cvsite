@@ -107,3 +107,9 @@ body
     z-index: 100;
     margin: 0px;
 }
+
+.page h
+{
+    font-weight: bold;
+    color: #e69100;
+}

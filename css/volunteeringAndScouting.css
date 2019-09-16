@@ -1,12 +1,12 @@
 :root
 {
-    --page-height: 4000px;
+    --page-height: 2900px;
 
     /* image width and height */
     --slider-width: 800px;
     --slider-height: 600px;
 
-    --grid-column-gap: 130px;
+    --grid-column-gap: 150px;
     --grid-row-gap: 10px;
 }
 
@@ -99,5 +99,16 @@
 #boatingQuals
 {
     top: 2150px;
-    left: 5%;
+    left: 25%;
+    width: 50%;
+}
+
+#qualsLink
+{
+    top: calc(var(--page-height) - 60px);
+}
+
+#qualsDownloadLink
+{
+    top: calc(var(--page-height) - 30px);
 }

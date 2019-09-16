@@ -1,0 +1,43 @@
+.page .textBlock
+{
+    position: absolute;
+
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.page .textBlock .title
+{
+    position: relative;
+    margin: inherit;
+    padding: inherit;
+    margin-bottom: 100px;
+
+    font-style: normal;
+    font-size: 100pt;
+    font-family: var(--default-font);
+}
+
+.page .textBlock .subtitle
+{
+	position: relative;
+    padding: 60px;
+
+    display: inline;
+    font-style: italic;
+    font-size: 24pt;
+    font-family: var(--default-font);
+}
+
+.page .textBlock .content
+{
+    position: relative;
+    margin: inherit;
+    margin-top: 50px;
+    padding: inherit;
+
+    font-style: normal;
+    font-size: 18pt;
+    font-family: var(--default-font);
+}
