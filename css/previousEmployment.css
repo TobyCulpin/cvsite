@@ -1,6 +1,6 @@
 :root
 {
-    --page-height: 4000px;
+    --page-height: 3100px;
 
     --dsp-height: 200px;
     --wolseley-height: 900px;
@@ -9,12 +9,33 @@
 }
 
 
-/* Other ids */
+/* jumpBar ids */
 
 #peJump
 {
     top: 100px;
-    text-align: center;
+
+    left: 30%;
+}
+
+#dspLink
+{
+    top: calc(var(--dsp-height) - 200px);
+}
+
+#wolseleyLink
+{
+    top: calc(var(--wolseley-height) - 200px);
+}
+
+#swanLink
+{
+    top: calc(var(--swan-height) - 200px);    
+}
+
+#prioryLink
+{
+    top: calc(var(--priory-height) - 200px);
 }
 
 

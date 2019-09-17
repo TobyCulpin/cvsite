@@ -6,7 +6,6 @@
 
     --logo-text-indent: calc(var(--logo-size) + var(--logo-indent) + 0px);
     --logo-text-size: 32px;
-    --logo-text-top-offset: -10px;
 
     --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -60,27 +59,47 @@ body
     color: #e69100;
 }
 
-#navLogoImage
+
+/* logo and dropdown */
+
+.navBar .logo
 {
-    position: absolute;
-    right: 10px;
-    top: var(--logo-top-offset);
+    position: relative;
+    float: right;
+}
+
+.navBar .logo h1
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 0px 0px 0px;
+
+    text-align: right;
+    font-size: var(--logo-text-size);
+    color: #e69100;
+    font-family: var(--default-font);
+}
+
+.navBar .logo img
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 0 20px 0 15px;
+
+    padding-top: calc((56px - var(--logo-size)) / 2);
 
     max-height: var(--logo-size);
     width: auto;
     height: auto;
 }
 
-#navLogoText
+.navBar .logo:hover
 {
-    position: absolute;
-
-    right: var(--logo-text-indent);
-    top: var(--logo-text-top-offset);
-    text-align: right;
-    font-size: var(--logo-text-size);
-    color: #e69100;
-    font-family: var(--default-font);
+    /*make the dropdown section drop down
+    might need js?*/
 }
 
 /* page */

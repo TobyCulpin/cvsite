@@ -1,0 +1,41 @@
+.page .jumpBar
+{
+    position: absolute;
+}
+
+.page .jumpBar ul
+{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+.page .jumpBar ul li
+{
+    float: left;
+}
+
+.page .jumpBar ul li a
+{
+    display: block;
+    color: #d0d0d0;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--default-font);
+}
+
+.page .jumpBar ul li a:hover
+{
+    color: #e69100;
+}
+
+.jumpLink
+{
+    position: absolute;
+}
