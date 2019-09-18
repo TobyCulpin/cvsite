@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/textBox.css">
+    <link rel="stylesheet" href="css/imgBox.css">
+    <link rel="stylesheet" href="css/externLink.css">
+
 
 </head>
 <body>
@@ -28,9 +33,56 @@
     <div class="page">
         <div class="bgImage"></div>
 
-        
+        <div id="contactTable" class="table">
+            <div class="title">
+                My Contact details<br><br>
+            </div>
+            <div class="wrapper">
+                <div class="row">Mobile:</div>
+                <div class="row">(+44) 07912345678</div>
+                <div class="row"></div>
+                
+                <div class="row">Telephone:</div>
+                <div class="row">01234 123456</div>
+                <div class="row"></div>
+
+                <div class="row">Email:</div>
+                <div class="row">Name.Surname@gmail.com</div>
+                <div class="row"></div>
+                
+                <div class="row">Address:<br></div>
+                <div class="row">123 Fake Street<br>Fakeville<br>Fake City<br>AB01 2CD</div>
+                <div class="row"></div>
+            </div>
+        </div>
+
+        <img id="profileImg" class="imgBox" src="images/zuck.jpg">        
+
+        <div id="aboutText" class="textBox">
+            <h1>Some text about Me</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora minus sint reiciendis maxime, veniam, libero magnam exercitationem omnis odio totam in id ullam ducimus, impedit voluptatibus modi temporibus illum eos?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sunt id quae nesciunt distinctio aliquam nobis veniam voluptas dolore enim assumenda soluta numquam repellat quisquam quod eius mollitia, quos tempora!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos harum voluptate quam deserunt error, fuga eum ut autem aut molestiae! Exercitationem placeat in consequatur, odit beatae mollitia fuga magnam!</p>
+            <a id="cvLink" class="externLink" href="images/zuck.jpg" data-title="Tobias Culpin CV - single page" target="_blank">A copy of my single-page cv can be found here</a>
+            <a id="cvDownloadLink" class="externLink" href="images/zuck.jpg" download>or downloaded here</a>
+        </div>
+
+        <div id="softwareText" class="textBox">
+            <h1>Why Software Development?</h1>
+            <br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora minus sint reiciendis maxime, veniam, libero magnam exercitationem omnis odio totam in id ullam ducimus, impedit voluptatibus modi temporibus illum eos?</p>
+            <br><p><h>Lorem ipsum dolor sit, amet consectetur</h> adipisicing elit. Magni sunt id quae nesciunt distinctio aliquam nobis veniam voluptas dolore enim assumenda soluta numquam repellat quisquam quod eius mollitia, quos tempora!</p>
+            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos harum voluptate quam deserunt error, fuga eum ut autem aut molestiae! Exercitationem placeat in consequatur, odit beatae mollitia fuga magnam!</p>
+            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus debitis voluptate aspernatur voluptas saepe provident similique nihil tempora nulla! Reprehenderit nihil adipisci, aperiam impedit ad est eligendi hic sit.</p>
+            <br><p><h>Lorem ipsum dolor sit amet consectetur</h>, adipisicing elit. Iure dolores laborum nostrum, veritatis numquam labore fuga impedit in ipsa consequuntur quidem ea, cum autem rerum soluta molestiae reiciendis ratione nemo?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptate amet earum, ad nostrum veritatis perspiciatis. Architecto, quidem molestias at rem, assumenda a quisquam numquam soluta facere optio quas omnis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo tempore veniam molestias consequatur, ipsa adipisci facere repudiandae! Temporibus veniam pariatur error qui minus beatae, illum assumenda tempore tempora inventore!</p>
+        </div>
+
+        <img id="softwareImg" class="imgBox" src="images/zuck.jpg">        
+        <img id="softwareImg1" class="imgBox" src="images/zuck.jpg">        
 
     </div>
 
 </body>
+<script src="js/externLink.js"></script>
 </html>

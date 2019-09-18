@@ -1,4 +1,66 @@
 :root
 {
-    --page-height: 2000px;
+    --page-height: 1600px;
+
+    --grid-column-gap: 60px;
+    --grid-row-gap: 15px;
+}
+
+#contactTable
+{
+    left: 15%;
+    top: 150px;
+}
+
+#aboutText
+{
+    right: 10%;
+    width: 35%;
+
+    top: 500px;
+}
+
+#cvDownloadLink
+{
+    position: relative;
+    text-align: left;
+
+}
+
+#cvLink
+{
+    position: relative;
+    text-align: left;
+}
+
+#profileImg
+{
+    top: 100px;
+
+    right: 10%;
+    width: 35%;
+}
+
+#softwareText
+{
+    top: 600px;
+
+    left: 10%;
+    width: 35%;
+}
+
+#softwareImg
+{
+    top: 900px;
+
+    right: 10%;
+    width: 35%;
+}
+
+#softwareImg1
+{
+    top: 1200px;
+
+    right: 10%;
+    width: 35%;
 }
