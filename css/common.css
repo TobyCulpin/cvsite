@@ -98,6 +98,9 @@ body
     height: auto;
 }
 
+/*
+Disabled while under construction
+
 .navBar .box
 {
     width: 100px;
@@ -116,7 +119,7 @@ body
 .show
 {
     /*make the dropdown section drop down
-    might need js?*/
+    might need js?*//*
     top: 100px;
     transition: 4s;
 }
@@ -126,6 +129,7 @@ body
     transition: 4s;
     top: -100px;
 }
+*/
 
 /* page */
 

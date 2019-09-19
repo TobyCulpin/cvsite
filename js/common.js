@@ -1,3 +1,6 @@
+/*
+Disabled while under construction
+
 document.onmouseover = document.onmouseout = handler;
 
 var box = document.getElementsByClassName('box');
@@ -23,3 +26,4 @@ function handler(event)
         }
     }
 }
+*/
