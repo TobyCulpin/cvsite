@@ -70,6 +70,6 @@ window.setInterval(function()
 {
     nextFun();
     
-}, 10000);
+}, 5000);
 
 

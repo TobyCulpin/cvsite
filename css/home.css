@@ -9,7 +9,7 @@
 #contactTable
 {
     left: 15%;
-    top: 150px;
+    top: 120px;
 }
 
 #aboutText
@@ -17,7 +17,7 @@
     right: 10%;
     width: 35%;
 
-    top: 500px;
+    top: 540px;
 }
 
 #cvDownloadLink
@@ -31,6 +31,14 @@
 {
     position: relative;
     text-align: left;
+}
+
+#mapImg
+{
+    top: 310px;
+
+    left: 30%;
+    width: 20%;
 }
 
 #profileImg

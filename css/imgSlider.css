@@ -33,7 +33,9 @@
     position: relative;
 
     transition: 1s;
-
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 
 .imgSlide1
@@ -42,6 +44,9 @@
     position: relative;
     left: calc(0 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide2
 {
@@ -49,6 +54,9 @@
     position: relative;
     left: calc(-1 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
     
 }
 .imgSlide3
@@ -57,6 +65,9 @@
     position: relative;
     left: calc(-2 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide4
 {
@@ -64,6 +75,9 @@
     position: relative;
     left: calc(-3 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide5
 {
@@ -71,6 +85,9 @@
     position: relative;
     left: calc(-4 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide6
 {
@@ -78,6 +95,9 @@
     position: relative;
     left: calc(-5 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide7
 {
@@ -85,6 +105,9 @@
     position: relative;
     left: calc(-6 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide8
 {
@@ -92,6 +115,9 @@
     position: relative;
     left: calc(-7 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide9
 {
@@ -99,6 +125,9 @@
     position: relative;
     left: calc(-8 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }
 .imgSlide10
 {
@@ -106,4 +135,7 @@
     position: relative;
     left: calc(-9 * var(--slider-width));
     transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tobias Culpin CV</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
@@ -12,6 +14,7 @@
     <link rel="stylesheet" href="css/textBox.css">
     <link rel="stylesheet" href="css/imgBox.css">
     <link rel="stylesheet" href="css/externLink.css">
+    <!--<link rel="stylesheet" href="css/curvedArrow.css">-->
 
 
 </head>
@@ -22,20 +25,45 @@
             <li><a href="education.html">Education</a></li>
             <li><a href="volunteeringAndScouting.html">Volunteering and Scouting</a></li>
             <li><a href="previousEmployment.html">Previous Employment</a></li>
-            <!--Disabled while under construction
-            <li><a href="skillsAndInterests.html">Skills and Interests</a></li>-->
+            <li><a href="skillsAndInterests.html">Skills and Interests</a></li>
             <li class="logo">
                 <h1 class="logoid">Tobias Culpin</h1>
-                <img class="logoid" src = "images/logo.png">
+                <img class="logoid" src = "images/logoDown.png">
             </li>
         </ul>
-        <!--Disabled while under construction
-        <img class="box" src="images/zuck.jpg">-->
+        
+        <div id=blankBox1></div>
+        <div class="box">
+            <img class="boxItem" src="images/blackBackground6.jpg">
+            <div id="boxItemTable" class="boxItem table">
+                <div class="boxItem wrapper">
+                    <div class="boxItem row"></div>
+                    <div class="boxItem row">(+44) 07910030981</div>
+                    <div class="boxItem row"></div>
+                    
+                    <div class="boxItem row"></div>
+                    <div class="boxItem row">01234 767858</div>
+                    <div class="boxItem row"></div>
+
+                    <div class="boxItem row"></div>
+                    <div class="boxItem row" id="email">CulpinTobiasWork@gmail.com</div>
+                    <div class="boxItem row" id="moveForEmail"></div>
+                    
+                    <div class="boxItem row"></div>
+                    <div class="boxItem row">Wootton, Bedford</div>
+                    <div class="boxItem row"></div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <div class="page">
         <div class="bgImage"></div>
+
+        <!--<div class="arrow">
+            <div class="arrow__body"></div>
+          </div>-->
 
         <div id="contactTable" class="table">
             <div class="title">
@@ -43,36 +71,38 @@
             </div>
             <div class="wrapper">
                 <div class="row">Mobile:</div>
-                <div class="row">(+44) 07912345678</div>
+                <div class="row">(+44) 07910030981</div>
                 <div class="row"></div>
                 
                 <div class="row">Telephone:</div>
-                <div class="row">01234 123456</div>
+                <div class="row">01234 767858</div>
                 <div class="row"></div>
 
                 <div class="row">Email:</div>
-                <div class="row">Name.Surname@gmail.com</div>
-                <div class="row"></div>
+                <div class="row" id="email">CulpinTobiasWork@gmail.com</div>
+                <div class="row" id="moveForEmail"></div>
                 
-                <div class="row">Address:<br></div>
-                <div class="row">123 Fake Street<br>Fakeville<br>Fake City<br>AB01 2CD</div>
+                <div class="row">Area:<br></div>
+                <div class="row">Wootton,<br>Bedford</div>
                 <div class="row"></div>
             </div>
         </div>
 
-        <img id="profileImg" class="imgBox" src="images/zuck.jpg">        
+        <img id="mapImg" class="imgBox" src="images/map.png">
+
+        <img id="profileImg" class="imgBox" src="images/profilePic1.png">        
 
         <div id="aboutText" class="textBox">
             <h1>Some text about Me</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora minus sint reiciendis maxime, veniam, libero magnam exercitationem omnis odio totam in id ullam ducimus, impedit voluptatibus modi temporibus illum eos?</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sunt id quae nesciunt distinctio aliquam nobis veniam voluptas dolore enim assumenda soluta numquam repellat quisquam quod eius mollitia, quos tempora!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos harum voluptate quam deserunt error, fuga eum ut autem aut molestiae! Exercitationem placeat in consequatur, odit beatae mollitia fuga magnam!</p>
-            <a id="cvLink" class="externLink" href="images/zuck.jpg" data-title="Tobias Culpin CV - single page" target="_blank">A copy of my single-page cv can be found here</a>
-            <a id="cvDownloadLink" class="externLink" href="images/zuck.jpg" download>or downloaded here</a>
+            <a id="cvLink" class="externLink" href="images/shortCV_TobiasCulpin.pdf" data-title="Tobias Culpin CV - single page" target="_blank">A copy of my single-page cv can be found here</a>
+            <a id="cvDownloadLink" class="externLink" href="images/shortCV_TobiasCulpin.pdf" download>or downloaded here</a>
         </div>
 
         <div id="softwareText" class="textBox">
-            <h1>Why Software Development?</h1>
+            <h1>My passion for software Development</h1>
             <br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora minus sint reiciendis maxime, veniam, libero magnam exercitationem omnis odio totam in id ullam ducimus, impedit voluptatibus modi temporibus illum eos?</p>
             <br><p><h>Lorem ipsum dolor sit, amet consectetur</h> adipisicing elit. Magni sunt id quae nesciunt distinctio aliquam nobis veniam voluptas dolore enim assumenda soluta numquam repellat quisquam quod eius mollitia, quos tempora!</p>
             <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos harum voluptate quam deserunt error, fuga eum ut autem aut molestiae! Exercitationem placeat in consequatur, odit beatae mollitia fuga magnam!</p>
@@ -82,11 +112,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo tempore veniam molestias consequatur, ipsa adipisci facere repudiandae! Temporibus veniam pariatur error qui minus beatae, illum assumenda tempore tempora inventore!</p>
         </div>
 
-        <img id="softwareImg" class="imgBox" src="images/zuck.jpg">        
-        <img id="softwareImg1" class="imgBox" src="images/zuck.jpg">        
+        <img id="softwareImg" class="imgBox" src="images/prime_factor_spiral_10000_inverted.png">        
+        <!--<img id="softwareImg1" class="imgBox" src="images/zuck.jpg">-->
 
     </div>
 
 </body>
 <script src="js/externLink.js"></script>
+<!--<script src="js/emailLink.js"></script>-->
+<script src="js/home.js"></script>
+<script src="js/common.js"></script>
 </html>

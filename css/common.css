@@ -8,6 +8,9 @@
     --logo-text-size: 32px;
 
     --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --dropdown-box-height: 172px;
+    --dropdown-box-width: 300px;
 }
 
 
@@ -98,38 +101,84 @@ body
     height: auto;
 }
 
-/*
-Disabled while under construction
+
+#blankBox1
+{
+    position: fixed;
+    right: 0px;
+    width: var(--dropdown-box-width);
+
+    top: 0px;
+    height: 60px;
+
+    background-color: blue;
+    opacity: 0;
+
+    z-index: 11000;
+}
 
 .navBar .box
 {
-    width: 100px;
-    height: 100px;
+    width: var(--dropdown-box-width);
+    height: var(--dropdown-box-height);
 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 
-    position: absolute;
+    position: fixed;
     right: 0%;
 
+    z-index: 9000;
+    transition: 0.3s;
+}
 
-    transition: 4s;
+.navBar .box img
+{
+    position: relative;
+    width: var(--dropdown-box-width);
+    height: var(--dropdown-box-height);
+
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .show
 {
-    /*make the dropdown section drop down
-    might need js?*//*
-    top: 100px;
-    transition: 4s;
+    top: 60px;
 }
 
 .hide
 {
-    transition: 4s;
-    top: -100px;
+    top: calc(60px - var(--dropdown-box-height));
 }
-*/
+
+/* dropdown content */
+
+#boxItemTable
+{
+    position: relative;
+    top: calc(-1 * var(--dropdown-box-height));
+    color: white;
+    font-family: var(--default-font);
+    font-size: 20px;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+#boxItemTable .wrapper .row
+{
+    padding-top: 4px;
+}
+
+#moveForEmail
+{
+    width: 0px;
+}
+
+#email:hover
+{
+    color: #e69100;
+}
 
 /* page */
 
@@ -145,7 +194,7 @@ Disabled while under construction
 .page .bgImage
 {
     margin: 64px 0px 0px 0px;
-    background-image: url("../images/blackBackground1.jpg");
+    background-image: url("../images/blackBackground6.jpg");
     height: var(--page-height);
     background-attachment: fixed;
     background-position: center;
@@ -160,4 +209,27 @@ Disabled while under construction
 {
     font-weight: bold;
     color: #e69100;
+}
+
+#curvedarrow
+{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid red;
+    transform: rotate(10deg);
+}
+#curvedarrow:after
+{
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid red;
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
 }
