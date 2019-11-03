@@ -17,46 +17,7 @@
 
 </head>
 <body>
-    <div class="navBar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a id="navBarCurrent" href="education.html">Education</a></li>
-            <li><a href="volunteeringAndScouting.html">Volunteering and Scouting</a></li>
-            <li><a href="previousEmployment.html">Previous Employment</a></li>
-            <li><a href="skillsAndInterests.html">Skills and Interests</a></li>
-            <li class="logo">
-                <h1 class="logoid">Tobias Culpin</h1>
-                <img class="logoid" src = "images/logoDown.png">
-            </li>
-        </ul>
-
-        <div id=blankBox1></div>
-        <div class="box">
-            <img class="boxItem" src="images/blackBackground6.jpg">
-            <div id="boxItemTable" class="boxItem table">
-                <div class="boxItem wrapper">
-                    <div class="boxItem row"></div>
-                    <div class="boxItem row">(+44) 07910030981</div>
-                    <div class="boxItem row"></div>
-                    
-                    <div class="boxItem row"></div>
-                    <div class="boxItem row">01234 767858</div>
-                    <div class="boxItem row"></div>
-
-                    <div class="boxItem row"></div>
-                    <div class="boxItem row" id="email">CulpinTobiasWork@gmail.com</div>
-                    <div class="boxItem row" id="moveForEmail"></div>
-                    
-                    <div class="boxItem row"></div>
-                    <div class="boxItem row">Wootton, Bedford</div>
-                    <div class="boxItem row"></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    
+    <div include-html="topBar.html"></div>
     
     <div class="page">
         <div class="bgImage"></div>
@@ -218,6 +179,7 @@
             <img id="myEducationImg" class="imgBox" src="images/zuck.jpg">
     </div>
 </body>
+<script src="js/includeHTML.js"></script>
 <script src="js/emailLink.js"></script>
 <script src="js/common.js"></script>
 </html>

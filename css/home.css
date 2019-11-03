@@ -6,6 +6,12 @@
     --grid-row-gap: 15px;
 }
 
+#homeTab
+{
+    background-color: #000000;
+    color: #e69100;
+}
+
 #contactTable
 {
     left: 15%;

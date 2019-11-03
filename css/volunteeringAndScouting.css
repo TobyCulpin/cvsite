@@ -10,6 +10,12 @@
     --grid-row-gap: 10px;
 }
 
+#volunteeringAndScoutingTab
+{
+    background-color: #000000;
+    color: #e69100;
+}
+
 /* DSP ids */
 
 #dspText

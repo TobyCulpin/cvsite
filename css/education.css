@@ -6,6 +6,12 @@
     --grid-row-gap: 5px;
 }
 
+#educationTab
+{
+    background-color: #000000;
+    color: #e69100;
+}
+
 /* Other ids */
 
 #otherGrades

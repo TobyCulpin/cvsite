@@ -2,3 +2,9 @@
 {
     --page-height: 2000px;
 }
+
+#skillsAndInterestsTab
+{
+    background-color: #000000;
+    color: #e69100;
+}
